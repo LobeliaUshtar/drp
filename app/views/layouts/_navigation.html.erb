@@ -1,0 +1,17 @@
+<div align='center'>
+  <%= image_tag("/assets/drp-logo.png", :class=>'logo') %>
+
+  <div class='nav-item'>
+    <div>
+      <%= link_to("Home", root_path, class: "btn btn-info") %>
+      <%= link_to("Our Portfolio", root_path, class: "btn btn-info") %>
+      <%= link_to("Our Products", root_path, class: "btn btn-info") %>
+      <%= link_to("About Us", root_path, class: "btn btn-info") %>
+      <%= link_to("Contact Us", root_path, class: "btn btn-info") %>
+    </div>
+    <div>
+      <%= link_to("New Skill", new_skill_path, class: 'btn btn-success btn-small') %>
+      <%= link_to("New User", new_user_path, class: 'btn btn-success btn-small') %>
+    </div>
+  </div>
+</div>

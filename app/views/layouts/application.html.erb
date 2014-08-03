@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Drp</title>
+  <title>Dun-Rite Painting</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-
-<%= yield %>
-
-</body>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <%= render 'layouts/navigation' %>
+      </div>
+      <div id="content">
+        <div id="main" role="main">
+          <div class="container">
+             <div class="row">
+              <div class="span12">
+                <%= render 'layouts/messages' %>
+                <%= yield %>
+              </div>
+            </div>
+          </div> <!--! end of .container -->
+        </div> <!--! end of #main -->
+      </div>
+      <div id="footer">
+        <%= render "layouts/footer" %>
+      </div>
+    </div>
+  </body>
 </html>

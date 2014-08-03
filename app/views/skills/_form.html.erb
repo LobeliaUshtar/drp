@@ -1,0 +1,15 @@
+<%= render 'shared/errors', item: @skill %>
+
+<div class='well'>
+  <%= form_for @skill do |f| %>
+    <div class='control-group'>
+      <%= f.label :name %>
+      <%= f.text_field :name, class: 'span10' %>
+    </div>
+    <div class='control-group'>
+      <%= f.label :description %>
+      <%= f.text_area :description, class: 'span10', rows: 3 %>
+    </div>
+    <%= f.submit(@skill.new_record? ? "Create Skill" : "Update Skill", class: 'btn btn-primary') %>
+  <% end %>
+</div>
