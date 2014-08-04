@@ -13,41 +13,13 @@
  *= require_tree .
  *= require_self
  */
-
+ 
 @import "bootstrap";
-
-.container {
-  margin-left: 100px;
-}
-
-.navbar .nav > li > a.brand {
-  padding-left: 0px;
-}
-
-.quiet {
-  color: #ababab;
-}
-
-div.nav_item {
-  margin-left: 25px;
-  float: left;
-}
 
 .btn {
     font-family: Arial;
     font-weight: 700;
 }
-
-.label  {
-  a, a:hover, a:focus {
-    color: #fff;
-    text-decoration: none;
-  }
-}
-
-/*.logo {
-  border: 5px solid #ADD8E6;
-}*/
 
 html, body {
   margin:0;
@@ -58,7 +30,7 @@ html, body {
 #wrapper {
   min-height:100%;
   position:relative;
-  background-color: #F8F8FF;
+  background-color: #FFFFFF;
 }
 
 #header {
@@ -85,4 +57,11 @@ html, body {
   text-align: center;
   font-family: cursive;
   background-color: #DC143C;
+}
+
+.listing {
+  text-align: center;
+  font-family: cursive;
+  color: #6495ED;
+  font-size: 20px;
 }
