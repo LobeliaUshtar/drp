@@ -13,8 +13,6 @@
  *= require_tree .
  *= require_self
  */
- 
-@import "bootstrap";
 
 .btn {
     font-family: Arial;
@@ -40,6 +38,9 @@ html, body {
 }
 
 #content {
+  padding-top: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
   padding-bottom:50px;   /* Height of the footer element */
 }
 
@@ -64,4 +65,9 @@ html, body {
   font-family: cursive;
   color: #6495ED;
   font-size: 20px;
+}
+
+.btn-icon {
+  background-color: #DC143C;
+  color: #FFFFFF;
 }
