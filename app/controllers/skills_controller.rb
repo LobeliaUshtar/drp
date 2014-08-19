@@ -15,7 +15,7 @@ class SkillsController < ApplicationController
     @skill = Skill.new(skill_params)
 
     if @skill.save
-      flash[:notice] = "New skill noted..."
+      flash[:sucess] = "New skill noted..."
       redirect_to skills_path
     else
       render :new
@@ -26,7 +26,7 @@ class SkillsController < ApplicationController
 
   def update
     if @skill.update(skill_params)
-      flash[:notice] = "Successfully updated..."
+      flash[:sucess] = "Successfully updated..."
       redirect_to skill_path(@skill)
     else
       render :edit
