@@ -2,39 +2,35 @@ source 'https://rubygems.org'
 ruby '2.1.2'
 
 gem 'rails', '4.1.4'
-gem 'sass-rails', '~> 4.0.3'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
-gem 'turbolinks'
-gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0',          group: :doc
-gem 'spring',                        group: :development
 gem 'bootstrap-sass'
 gem 'bootstrap_form'
-gem 'high_voltage'
-gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt'
+gem 'fabrication'
+gem 'faker'
 gem 'sluggable_lobelia'
 
+gem 'sass-rails'
+gem 'coffee-rails'
+gem 'capybara-rails'
+gem 'uglifier'
+gem 'jbuilder', '~> 2.0'
+gem 'turbolinks'
+gem 'sprockets', '~> 2.8'
+gem 'sprockets-rails', '~> 2.0.0'
+gem 'railties', '~> 4.1.1'
+
 group :development do
-  gem 'better_errors'
-  gem 'binding_of_caller', :platforms=>[:mri_21]
-  gem 'quiet_assets'
-  gem 'rails_layout'
+  gem 'sqlite3'
 end
 
 group :development, :test do
-  gem 'sqlite3'
-  gem 'factory_girl_rails'
   gem 'rspec-rails'
 end
 
 group :test do
+  gem 'shoulda-matchers'
   gem 'capybara'
-  gem 'database_cleaner'
-  gem 'faker'
-  gem 'launchy'
-  gem 'selenium-webdriver'
 end
 
 group :production do
